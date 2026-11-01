@@ -1,0 +1,13 @@
+name: Run Python File
+
+on: push
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Run practice.py
+        run: python practice.py
